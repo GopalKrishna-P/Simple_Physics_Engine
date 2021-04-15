@@ -17,12 +17,15 @@ endif
 
 include sources.mk
 
-.PHONY: all clean
+.PHONY: all clean setpath
 
-all: target
+all: setpath target
 
 clean:
 	rm -rf $(TOP_OBJ_DIR) $(TARGET)
+
+setpath:
+	export DYLD_FALLBACK_LIBRARY_PATH=$(CURR_DIR)/lib/lib
 
 include make.mk
 

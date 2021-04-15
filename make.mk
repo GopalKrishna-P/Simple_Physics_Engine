@@ -25,7 +25,7 @@ CURR_DIR = $(shell pwd)
 # global compiler flags
 CXX = g++
 CXXFLAGS += -Wall -ansi -pedantic -I"$(CURR_DIR)/include" -I"$(CURR_DIR)/$(SRC_DIR)"
-LDFLAGS = -L"$(CURR_DIR)/lib" -lGL -lGLU -lSDLmain -lSDL -lpng -lGLEW
+LDFLAGS = -L"$(CURR_DIR)/lib/lib" -lSDLmain -lSDL -lpng -lGLEW -framework OpenGL -framework GLUT
 
 # object directories, mode flags
 
