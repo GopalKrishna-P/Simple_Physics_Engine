@@ -8,7 +8,7 @@
 
 #include "scene/model.hpp"
 #include "scene/material.hpp"
-#include <GL/gl.h>
+#include <OpenGL/gl.h>
 #include <iostream>
 #include <cstring>
 #include <string>

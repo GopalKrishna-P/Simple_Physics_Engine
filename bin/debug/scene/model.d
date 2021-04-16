@@ -1,6 +1,5 @@
-bin/debug/physics/trianglebody.o: src/physics/trianglebody.cpp \
-  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/physics/trianglebody.hpp \
-  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/triangle.hpp \
+bin/debug/scene/model.o: src/scene/model.cpp \
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/model.hpp \
   /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/material.hpp \
   /Users/goppen/Developer/Education/Simple_Physics_Engine/src/math/color.hpp \
   /Users/goppen/Developer/Education/Simple_Physics_Engine/src/math/math.hpp \
@@ -12,13 +11,9 @@ bin/debug/physics/trianglebody.o: src/physics/trianglebody.cpp \
   /usr/local/include/SDL/SDL_platform.h \
   /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/geometry.hpp \
   /Users/goppen/Developer/Education/Simple_Physics_Engine/src/math/quaternion.hpp \
-  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/physics/body.hpp \
-  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/physics/spherebody.hpp \
-  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/sphere.hpp
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/mesh.hpp
 
-/Users/goppen/Developer/Education/Simple_Physics_Engine/src/physics/trianglebody.hpp:
-
-/Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/triangle.hpp:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/model.hpp:
 
 /Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/material.hpp:
 
@@ -42,8 +37,4 @@ bin/debug/physics/trianglebody.o: src/physics/trianglebody.cpp \
 
 /Users/goppen/Developer/Education/Simple_Physics_Engine/src/math/quaternion.hpp:
 
-/Users/goppen/Developer/Education/Simple_Physics_Engine/src/physics/body.hpp:
-
-/Users/goppen/Developer/Education/Simple_Physics_Engine/src/physics/spherebody.hpp:
-
-/Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/sphere.hpp:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/src/scene/mesh.hpp:

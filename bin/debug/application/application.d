@@ -1,6 +1,6 @@
 bin/debug/application/application.o: src/application/application.cpp \
-  /Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/application/application.hpp \
-  /Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/math/math.hpp \
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/application/application.hpp \
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/math/math.hpp \
   /usr/local/include/SDL/SDL_events.h \
   /usr/local/include/SDL/SDL_stdinc.h \
   /usr/local/include/SDL/SDL_config.h \
@@ -13,10 +13,10 @@ bin/debug/application/application.o: src/application/application.cpp \
   /usr/local/include/SDL/SDL_video.h /usr/local/include/SDL/SDL_rwops.h \
   /usr/local/include/SDL/SDL_joystick.h \
   /usr/local/include/SDL/SDL_quit.h \
-  /Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/application/opengl.hpp \
-  /Users/goppen/Developer/Education/Simple_\ Physics_Engine/include/GL/glew.h \
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/application/opengl.hpp \
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/include/GL/glew.h \
   /usr/local/include/SDL/SDL_opengl.h \
-  /Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/application/imageio.hpp \
+  /Users/goppen/Developer/Education/Simple_Physics_Engine/src/application/imageio.hpp \
   /usr/local/include/SDL/SDL.h /usr/local/include/SDL/SDL_main.h \
   /usr/local/include/SDL/SDL_audio.h /usr/local/include/SDL/SDL_endian.h \
   /usr/local/include/SDL/SDL_mutex.h /usr/local/include/SDL/SDL_thread.h \
@@ -25,9 +25,9 @@ bin/debug/application/application.o: src/application/application.cpp \
   /usr/local/include/SDL/SDL_loadso.h /usr/local/include/SDL/SDL_timer.h \
   /usr/local/include/SDL/SDL_version.h
 
-/Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/application/application.hpp:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/src/application/application.hpp:
 
-/Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/math/math.hpp:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/src/math/math.hpp:
 
 /usr/local/include/SDL/SDL_events.h:
 
@@ -59,13 +59,13 @@ bin/debug/application/application.o: src/application/application.cpp \
 
 /usr/local/include/SDL/SDL_quit.h:
 
-/Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/application/opengl.hpp:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/src/application/opengl.hpp:
 
-/Users/goppen/Developer/Education/Simple_\ Physics_Engine/include/GL/glew.h:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/include/GL/glew.h:
 
 /usr/local/include/SDL/SDL_opengl.h:
 
-/Users/goppen/Developer/Education/Simple_\ Physics_Engine/src/application/imageio.hpp:
+/Users/goppen/Developer/Education/Simple_Physics_Engine/src/application/imageio.hpp:
 
 /usr/local/include/SDL/SDL.h:
 
