@@ -1,4 +1,6 @@
 #include "physics/physics.hpp"
+#include <cstdio>
+#include <iostream>
 
 namespace _462 {
 
@@ -24,11 +26,49 @@ void Physics::step( real_t dt )
     // Note, when you change the position/orientation of a physics object,
     // change the position/orientation of the graphical object that represents
     // it
+    Vector3 k1, k2, k3, k4;
+    //printf("position: %f %f %f\n", spheres[0]->position.x, spheres[0]->position.y, spheres[0]->position.z);
+    //printf(velocity: "%f %f %f\n", spheres[0]->velocity.x, spheres[0]->velocity.y, spheres[0]->velocity.z);
+    //printf("force: %f %f %f\n", spheres[0]->force.x, spheres[0]->force.y, spheres[0]->force.z);
+    //std::cout << "plane normal" << planes[0]->normal << "plane orientation" << planes[0]->orientation << std::endl;
+    //std::cout << gravity << std::endl;
+    //std::cout << num_triangles() << std::endl;
+    for (int i = 0; i < spheres.size(); i++) {
+        spheres[i]->step_position(dt, 0);
+        spheres[i]->step_orientation(dt, 0);
+    }
+
+    for (int i = 0; i < num_spheres(); i++) {
+        for (int j = i + 1; j < num_spheres(); j++) {
+            collides(*(spheres[i]), *(spheres[j]), collision_damping);
+        }
+        //detect collision with plane && triangle
+        for (int j = 0; j < num_planes(); j++) {
+            collides(*(spheres[i]), *(planes[j]), collision_damping);
+        }
+        for (int j = 0; j < num_triangles(); j++) {
+            collides(*spheres[i], *triangles[j], collision_damping);
+        }
+    }
+
+    for (int i = 0; i < num_springs(); i++) {
+        springs[i]->step(dt);
+
+        springs[i]->body1->step_position(dt, 0);
+        springs[i]->body1->step_orientation(dt, 0);
+
+        springs[i]->body2->step_position(dt, 0);
+        springs[i]->body2->step_orientation(dt, 0);
+
+        //std::cout<< "1: velocity "<< springs[i]->body1->velocity << " position " << springs[i]->body1->position << std::endl;
+        //std::cout<< "2: velocity "<< springs[i]->body2->velocity << " position " << springs[i]->body2->position << std::endl;
+    }
 }
 
 void Physics::add_sphere( SphereBody* b )
 {
     spheres.push_back( b );
+    b->apply_force(gravity, Vector3::Zero);
 }
 
 size_t Physics::num_spheres() const
